@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		20042675241FBE2500511D57 /* LoadingDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20042674241FBE2500511D57 /* LoadingDialogView.swift */; };
 		200426D4241FC4B800511D57 /* LoadingDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 200426CC241FC30A00511D57 /* LoadingDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		200426E5241FCC0300511D57 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200426E4241FCC0300511D57 /* ViewHelper.swift */; };
+		206B60B0241FDCB2005E4AE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206B60AF241FDCB2005E4AE3 /* UIKit.framework */; };
+		206B60B2241FDCE7005E4AE3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206B60B1241FDCE7005E4AE3 /* CoreFoundation.framework */; };
+		206B60B4241FDCED005E4AE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206B60B3241FDCED005E4AE3 /* Foundation.framework */; };
 		20C48789241FCE9A0068FB31 /* LoaderBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C48788241FCE9A0068FB31 /* LoaderBackgroundView.swift */; };
-		20C48792241FD7B30068FB31 /* GetSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C48791241FD7B30068FB31 /* GetSizes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +20,10 @@
 		2004266D241FBE1800511D57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20042674241FBE2500511D57 /* LoadingDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDialogView.swift; sourceTree = "<group>"; };
 		200426CC241FC30A00511D57 /* LoadingDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingDialog.h; sourceTree = "<group>"; };
-		200426E4241FCC0300511D57 /* ViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHelper.swift; sourceTree = "<group>"; };
+		206B60AF241FDCB2005E4AE3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		206B60B1241FDCE7005E4AE3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		206B60B3241FDCED005E4AE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		20C48788241FCE9A0068FB31 /* LoaderBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderBackgroundView.swift; sourceTree = "<group>"; };
-		20C48791241FD7B30068FB31 /* GetSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSizes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206B60B4241FDCED005E4AE3 /* Foundation.framework in Frameworks */,
+				206B60B2241FDCE7005E4AE3 /* CoreFoundation.framework in Frameworks */,
+				206B60B0241FDCB2005E4AE3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				2004266B241FBE1800511D57 /* LoadingDialog */,
 				2004266A241FBE1800511D57 /* Products */,
+				206B60AE241FDCB2005E4AE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +60,6 @@
 		2004266B241FBE1800511D57 /* LoadingDialog */ = {
 			isa = PBXGroup;
 			children = (
-				20C48790241FD7960068FB31 /* Helpers */,
 				2004266D241FBE1800511D57 /* Info.plist */,
 				20042674241FBE2500511D57 /* LoadingDialogView.swift */,
 				200426CC241FC30A00511D57 /* LoadingDialog.h */,
@@ -63,13 +68,14 @@
 			path = LoadingDialog;
 			sourceTree = "<group>";
 		};
-		20C48790241FD7960068FB31 /* Helpers */ = {
+		206B60AE241FDCB2005E4AE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				200426E4241FCC0300511D57 /* ViewHelper.swift */,
-				20C48791241FD7B30068FB31 /* GetSizes.swift */,
+				206B60B3241FDCED005E4AE3 /* Foundation.framework */,
+				206B60B1241FDCE7005E4AE3 /* CoreFoundation.framework */,
+				206B60AF241FDCB2005E4AE3 /* UIKit.framework */,
 			);
-			path = Helpers;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,10 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				200426E5241FCC0300511D57 /* ViewHelper.swift in Sources */,
 				20C48789241FCE9A0068FB31 /* LoaderBackgroundView.swift in Sources */,
 				20042675241FBE2500511D57 /* LoadingDialogView.swift in Sources */,
-				20C48792241FD7B30068FB31 /* GetSizes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +298,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LoadingDialog/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = roweb.LoadingDialog;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,6 +326,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LoadingDialog/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = roweb.LoadingDialog;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

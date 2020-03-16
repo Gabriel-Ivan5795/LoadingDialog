@@ -10,7 +10,7 @@ import UIKit
 
 class LoaderBackgroundView: UIView {
     
-    override func didMoveToSuperview() {
+    public override func didMoveToSuperview() {
         super.didMoveToSuperview()
         
         if (self.superview != nil) {
