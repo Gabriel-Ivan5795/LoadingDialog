@@ -57,14 +57,7 @@ public class LoadingDialogView: UIView {
             self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[v0(50)]", options: [], metrics: nil, views: ["v0":self.loader]))
             self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-10-[v0]-10-|", options: [], metrics: nil, views: ["v0":self.label]))
             self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-6-[v0(50)]-18-[v1(20)]-6-|", options: [], metrics: nil, views: ["v0":self.loader,"v1":self.label]))
-            let constraint = NSLayoutConstraint(item: self,
-                                                attribute: .centerX,
-                                                relatedBy: .equal,
-                                                toItem: superview,
-                                                attribute: .centerX,
-                                                multiplier: 1,
-                                                constant: CGFloat(1))
-            self.loader.addConstraint(constraint)
+            self.loader.centerHorizontally(deviation: 1)
             
             self.hideLoader()
         }
