@@ -1,0 +1,11 @@
+framework module LoadingDialog {
+  umbrella header "LoadingDialog.h"
+
+  export *
+  module * { export * }
+}
+
+module LoadingDialog.Swift {
+    header "LoadingDialog-Swift.h"
+    requires objc
+}
