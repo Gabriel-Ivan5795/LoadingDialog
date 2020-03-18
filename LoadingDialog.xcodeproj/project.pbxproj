@@ -68,48 +68,16 @@
 		2004266B241FBE1800511D57 /* LoadingDialog */ = {
 			isa = PBXGroup;
 			children = (
-				2064BE3124223688009961AD /* Views */,
-				2064BE2E24223665009961AD /* Helpers */,
 				2004266D241FBE1800511D57 /* Info.plist */,
-				200426CC241FC30A00511D57 /* LoadingDialog.h */,
-			);
-			path = LoadingDialog;
-			sourceTree = "<group>";
-		};
-		2064BE2E24223665009961AD /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				2064BE3024223675009961AD /* Size */,
-				2064BE2F2422366B009961AD /* Constraints */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		2064BE2F2422366B009961AD /* Constraints */ = {
-			isa = PBXGroup;
-			children = (
-				20984C762420C29200AA07D6 /* ViewHelper.swift */,
-			);
-			path = Constraints;
-			sourceTree = "<group>";
-		};
-		2064BE3024223675009961AD /* Size */ = {
-			isa = PBXGroup;
-			children = (
-				2040955B2421132400F2E5F0 /* GetSizes.swift */,
-			);
-			path = Size;
-			sourceTree = "<group>";
-		};
-		2064BE3124223688009961AD /* Views */ = {
-			isa = PBXGroup;
-			children = (
 				20042674241FBE2500511D57 /* LoadingDialogView.swift */,
 				20C48788241FCE9A0068FB31 /* LoaderBackgroundView.swift */,
 				20E330752421FEE40001FF76 /* LoadingDialog.swift */,
 				20E3307724221F820001FF76 /* LoaderView.swift */,
+				200426CC241FC30A00511D57 /* LoadingDialog.h */,
+				2040955B2421132400F2E5F0 /* GetSizes.swift */,
+				20984C762420C29200AA07D6 /* ViewHelper.swift */,
 			);
-			path = Views;
+			path = LoadingDialog;
 			sourceTree = "<group>";
 		};
 		206B60AE241FDCB2005E4AE3 /* Frameworks */ = {
