@@ -96,7 +96,7 @@ class LoaderView : UIView {
         let animation = CAKeyframeAnimation(keyPath: keyPath)
         animation.keyTimes = times as [NSNumber]?
         animation.values = values
-        animation.calculationMode = .linear
+        animation.calculationMode = CAAnimationCalculationMode.linear
         animation.duration = duration
         animation.repeatCount = Float.infinity
         layer.add(animation, forKey: animation.keyPath)
@@ -110,7 +110,7 @@ class LoaderView : UIView {
             UIColor(hue: CGFloat($0) / CGFloat(count), saturation: 1, brightness: 1, alpha: 1).cgColor
         }
         animation.duration = duration
-        animation.calculationMode = .linear
+        animation.calculationMode = CAAnimationCalculationMode.linear
         animation.repeatCount = Float.infinity
         layer.add(animation, forKey: animation.keyPath)
     }
