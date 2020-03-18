@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LoadingDialog"
-  spec.version      = "1.2"
+  spec.version      = "1.3"
   spec.summary      = "Loader dialog for waiting time" 
 
   # This description is used to generate tags and improve search results.
