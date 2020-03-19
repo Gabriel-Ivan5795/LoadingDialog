@@ -12,8 +12,9 @@
 		2039EC1824227C7300574C15 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2039EA2D24227C4E00574C15 /* CoreFoundation.framework */; };
 		2039EC1924227C7300574C15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2039E94324227C4500574C15 /* Foundation.framework */; };
 		2039EC1A24227C7D00574C15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206B60AF241FDCB2005E4AE3 /* UIKit.framework */; };
-		2039EC1B24227CA200574C15 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2039E9082422699500574C15 /* QuartzCore.framework */; };
 		2040955C2421132400F2E5F0 /* GetSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2040955B2421132400F2E5F0 /* GetSizes.swift */; };
+		2077D58324235DEB003F32C6 /* libswiftQuartzCore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2039E95A24227C4600574C15 /* libswiftQuartzCore.tbd */; };
+		2077D58424235DEB003F32C6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2039E9082422699500574C15 /* QuartzCore.framework */; };
 		20984C772420C29200AA07D6 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20984C762420C29200AA07D6 /* ViewHelper.swift */; };
 		20C48789241FCE9A0068FB31 /* LoaderBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C48788241FCE9A0068FB31 /* LoaderBackgroundView.swift */; };
 		20E330762421FEE40001FF76 /* LoadingDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E330752421FEE40001FF76 /* LoadingDialog.swift */; };
@@ -437,7 +438,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2039EC1B24227CA200574C15 /* QuartzCore.framework in Frameworks */,
+				2077D58324235DEB003F32C6 /* libswiftQuartzCore.tbd in Frameworks */,
+				2077D58424235DEB003F32C6 /* QuartzCore.framework in Frameworks */,
 				2039EC1A24227C7D00574C15 /* UIKit.framework in Frameworks */,
 				2039EC1824227C7300574C15 /* CoreFoundation.framework in Frameworks */,
 				2039EC1924227C7300574C15 /* Foundation.framework in Frameworks */,
